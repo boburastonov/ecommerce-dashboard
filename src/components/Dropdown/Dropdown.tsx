@@ -4,7 +4,7 @@ import DropdownBase, { DropDownProps as IProps } from "antd/lib/dropdown";
 import "./Dropdown.scss";
 
 const Dropdown: React.FC<IProps> = ({ children, ...props }) => (
-  <DropdownBase {...props} destroyPopupOnHide>
+  <DropdownBase {...props} destroyOnHidden={true}>
     <div>{children}</div>
   </DropdownBase>
 );
